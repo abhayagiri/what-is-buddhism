@@ -108,7 +108,7 @@
 
 \setmainfont[
   SmallCapsFont = Gentium Book Basic,
-  SmallCapsFeatures= { Ligatures = TeX, Letters = SmallCaps },
+  SmallCapsFeatures= { Ligatures = TeX }, %Letters = SmallCaps },
   BoldFont = Gentium Book Basic Bold,
 ]{Gentium}
 
@@ -200,7 +200,7 @@
 ]{Crimson Text}
 
 \newfontfamily\crimsonRomanFontOldNum[
-  Numbers = OldStyle,
+  %Numbers = OldStyle,
 ]{Crimson Text}
 
 \newfontfamily\gentiumFont{Gentium}
