@@ -36,7 +36,7 @@
   pagePreset/.store in=\GIST@pagePreset,
   textType/.default=prose,% prose / quoteAndComment
   textType/.store in=\GIST@textType,
-  babelLanguage/.default=british,
+  babelLanguage/.default=USenglish,
   babelLanguage/.store in=\GIST@babelLanguage,
 }
 
@@ -107,7 +107,7 @@
 % body text
 
 \setmainfont[
-  SmallCapsFont = Crimson Roman,
+  SmallCapsFont = Gentium Book Basic,
   SmallCapsFeatures= { Ligatures = TeX, Letters = SmallCaps },
   BoldFont = Gentium Book Basic Bold,
 ]{Gentium}
@@ -115,36 +115,36 @@
 % header and footer
 
 \newfontfamily\headFont[
-  ItalicFont = Shaker 2 Light Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker 2 Light}
+]{Liberation Sans}
 
 \newfontfamily\footFont[
-  ItalicFont = Shaker 2 Light Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker 2 Light}
+]{Liberation Sans}
 
 % chapter
 
-\newfontfamily\chapterNameFont{Crimson Roman}
-\newfontfamily\chapterTitleFont{Crimson Roman}
-\newfontfamily\chapterNumberFont{Crimson Roman}
-\newfontfamily\chapterAuthorFont{Crimson Roman}
+\newfontfamily\chapterNameFont{Crimson Text}
+\newfontfamily\chapterTitleFont{Crimson Text}
+\newfontfamily\chapterNumberFont{Crimson Text}
+\newfontfamily\chapterAuthorFont{Crimson Text}
 \newfontfamily\chapterNoteFont[
-  BoldFont = Crimson Semibold,
-  ItalicFont = Crimson Italic,
-]{Crimson Roman}
+  BoldFont = Crimson Text Semibold,
+  ItalicFont = Crimson Text Italic,
+]{Crimson Text}
 
 % section
 
 \newfontfamily\sectionFont[
-  BoldFont = Crimson Semibold,
-  ItalicFont = Crimson Italic,
-]{Crimson Roman}
+  BoldFont = Crimson Text Semibold,
+  ItalicFont = Crimson Text Italic,
+]{Crimson Text}
 
 % other fonts
 
-\newfontfamily\tocPageNumFont{Shaker Pali}
+\newfontfamily\tocPageNumFont{Liberation Sans}
 
 }{}
 
@@ -155,60 +155,60 @@
 % body text
 
 \setmainfont[
-  ItalicFont = Shaker 2 Light Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker 2 Light}
+]{Liberation Sans}
 
 % header and footer
 
 \newfontfamily\footFont[
-  ItalicFont = Shaker 2 Light Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker 2 Light}
+]{Liberation Sans}
 
 % chapter
 
 \newfontfamily\chapterNameFont[
-  ItalicFont = Shaker 2 Light Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker 2 Light}
+]{Liberation Sans}
 
 \newfontfamily\chapterTitleFont[
-  ItalicFont = Shaker 2 Light Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker 2 Light}
+]{Liberation Sans}
 
-\newfontfamily\chapterNumberFont{Shaker Pali}
-\newfontfamily\chapterAuthorFont{Shaker Pali}
-\newfontfamily\chapterNoteFont{Shaker Pali}
+\newfontfamily\chapterNumberFont{Liberation Sans}
+\newfontfamily\chapterAuthorFont{Liberation Sans}
+\newfontfamily\chapterNoteFont{Liberation Sans}
 
 % section
 
-\newfontfamily\sectionFont{Shaker Pali}
+\newfontfamily\sectionFont{Liberation Sans}
 
 % other fonts
 
-\newfontfamily\tocPageNumFont{Shaker Pali}
+\newfontfamily\tocPageNumFont{Liberation Sans}
 
 }{}
 
 % === fonts by name ===
 
 \newfontfamily\crimsonRomanFont[
-  BoldFont = Crimson Semibold,
-  ItalicFont = Crimson Italic,
-]{Crimson Roman}
+  BoldFont = Crimson Text Semibold,
+  ItalicFont = Crimson Text Italic,
+]{Crimson Text}
 
 \newfontfamily\crimsonRomanFontOldNum[
   Numbers = OldStyle,
-]{Crimson Roman}
+]{Crimson Text}
 
 \newfontfamily\gentiumFont{Gentium}
 
 \newfontfamily\shakerFont[
-  ItalicFont = Shaker Pali Italic,
+  ItalicFont = Liberation Sans Italic,
   Renderer = Basic,
-]{Shaker Pali}
+]{Liberation Sans}
 
 % === sizes ===
 
@@ -337,7 +337,7 @@
 % memoir's more allowing penalties
 \midsloppy
 
-\renewcommand\britishhyphenmins{{3}{3}}
+% \renewcommand\britishhyphenmins{{3}{3}}
 
 % lastparline:
 %   ``Ensures that the last line of a paragraph is at least as long as the
