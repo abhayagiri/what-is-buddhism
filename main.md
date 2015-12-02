@@ -333,7 +333,7 @@ religion to create Tibetan Buddhism. This then spread further to Mongolia and
 Bhutan. The most well-known Tibetan monk and Nobel Peace Prize laureate is the
 Dalai Lama.
 
-## Buddhism in the World Today
+# Buddhism in the World Today
 
 Buddhism continues to gain an ever-widening audience in countries and
 societies far beyond its original home. Many people throughout the world,
