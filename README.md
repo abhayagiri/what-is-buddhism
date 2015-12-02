@@ -7,8 +7,10 @@ of Tan Gambhiro.
 
 ### Debian/Ubuntu
 
-    apt-get install -y texlive-full
+    apt-get install -y texlive-full pandoc
 
 ### Cygwin
 
     apt-cyg install texlive
+
+Install pandoc separately.

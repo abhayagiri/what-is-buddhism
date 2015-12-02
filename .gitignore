@@ -1,3 +1,5 @@
 *.aux
 *.log
 book.pdf
+front.tex
+main.tex
