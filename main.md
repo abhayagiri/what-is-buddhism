@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 For more than 2,600 years, the religion we know today as Buddhism has guided
 many great civilizations, inspired refined cultural achievements and produced
@@ -8,7 +8,7 @@ men and women from diverse backgrounds throughout the world are following the
 teachings of the Buddha. So what is Buddhism? Who was the Buddha, and what are
 his teachings?
 
-## The Buddha
+# The Buddha
 
 The person who was to become the Buddha was born Siddhattha Gotama roughly 480
 BCE as a prince of a small kingdom near what is now the Indian-Nepalese
@@ -32,9 +32,9 @@ teach, but they still could not provide the answers he was seeking. He then
 adopted the path of extreme asceticism---not allowing himself to feel pleasure
 while fasting to the brink of death---but still to no avail.
 
-By age 35, Siddhattha had realized that neither self-indulgence nor self-
-torment would lead to true happiness. He then tried a different tact. Turning
-away from these two extremes, he applied his mind to developing deep
+By age 35, Siddhattha had realized that neither self-indulgence nor
+self-torment would lead to true happiness. He then tried a different tact.
+Turning away from these two extremes, he applied his mind to developing deep
 concentration and freedom through wisdom. Sitting beneath the branches of what
 is now known as the Bodhi Tree, he developed his mind in luminous and tranquil
 states of meditation. With the extraordinary clarity and sharp penetrative
@@ -63,7 +63,7 @@ would lead others to the same awakening. These teachings are known as the
 *Dhamma* (or *Dharma*), meaning 'the nature of all things' or 'the path to
 understand the truths of existence'.
 
-## A Path of Inquiry
+# A Path of Inquiry
 
 There are no fixed beliefs that a person must adopt in order to be a
 'Buddhist'. In fact, the Buddha warned against the dangers of blind faith and
@@ -78,7 +78,7 @@ meditation deepens, direct insight into the nature of life grows. At this
 point one is in a position to clearly decide what religious or spiritual
 teachings are in accordance with reality.
 
-## Meditation
+# Meditation
 
 Meditation refers to the mental activity of sustaining clear awareness on one
 thing: a physical sensation, perception, concept, process or material object.
@@ -100,30 +100,34 @@ thought patterns. As one sees clearly, wisdom is born, and thus serenity and
 insight form an inseparable pair that is gradually cultivated until the
 realization of full enlightenment.
 
-## The Four Noble Truths
+# The Four Noble Truths
 
 The central teaching of the Buddha, around which all his other teachings
 revolve, is the Four Noble Truths, formulated as a medical analysis:
 
 1. The diagnosis: Life inevitably involves some mental and physical pain.
-Everyone at some point experiences disappointment, discomfort, anger, sadness,
-anxiety or suffering. People don't always get what they want, and they are
-often separated from whom and what they love. If we live long enough, we
-experience the gradual physical degeneration of old age, and everyone
-encounters death.  Even the subtle but pervasive stress that accompanies
-normal daily functioning is a burden. 2. The cause: The root of mental pain is
-craving for sensual pleasure, for existence or for non-existence; or simply
-wishing that things were different than they are. Craving is fueled by
-reactions to pleasure and pain and driven by the illusion of 'me' and 'mine',
-which in turn arise from misunderstanding the true nature of reality. 3. The
-recovery: It is possible for all mental suffering to completely cease. This is
-the attainment of enlightenment or awakening. Enlightenment is the
-purification of the heart from all traces of attraction, aversion or delusion.
-It is the complete letting go of the illusion of an independent self or soul.
-A fully awakened person is called an *Arahant*. The Buddha called this the
-highest happiness, the full realization of human potential. 4. The treatment:
-Enlightenment is achieved through a gradual training, a way of life called the
-Middle Way, or the Noble Eightfold Path.
+   Everyone at some point experiences disappointment, discomfort, anger,
+   sadness, anxiety or suffering. People don't always get what they want, and
+   they are often separated from whom and what they love. If we live long
+   enough, we experience the gradual physical degeneration of old age, and
+   everyone encounters death. Even the subtle but pervasive stress that
+   accompanies normal daily functioning is a burden.
+
+2. The cause: The root of mental pain is craving for sensual pleasure, for
+   existence or for non-existence; or simply wishing that things were
+   different than they are. Craving is fueled by reactions to pleasure and
+   pain and driven by the illusion of 'me' and 'mine', which in turn arise
+   from misunderstanding the true nature of reality.
+
+3. The recovery: It is possible for all mental suffering to completely cease.
+   This is the attainment of enlightenment or awakening. Enlightenment is the
+   purification of the heart from all traces of attraction, aversion or
+   delusion. It is the complete letting go of the illusion of an independent
+   self or soul. A fully awakened person is called an *Arahant*. The Buddha
+   called this the highest happiness, the full realization of human potential.
+
+4. The treatment: Enlightenment is achieved through a gradual training, a way
+   of life called the Middle Way, or the Noble Eightfold Path.
 
 These Four Noble Truths are realistic in that they face up to life's
 imperfections, and optimistic in that they offer a practical solution: a way
@@ -140,7 +144,7 @@ reflection on suffering is emphasized as the key to ultimate liberation, and
 those who have realized enlightenment are inspiring examples of profound
 happiness, loving-kindness and compassion.
 
-## The Middle Way
+# The Middle Way
 
 The path to awakening is called the Middle Way, because it avoids the two
 extremes of self-indulgence and self-torment. Such extreme behavior does not
@@ -148,22 +152,34 @@ lead to peace. The Middle Way consists of cultivating virtue, serenity and
 wisdom and is further elaborated as the Noble Eightfold Path:
 
 1. The perfection of understanding: views that are in accord with the natural
-truths of reality. 2. The perfection of intention: motivations of loving-
-kindness, compassion and renunciation. 3. The perfection of speech: words that
-are honest, harmonious, gentle and meaningful. 4. The perfection of behavior:
-non-violence, not stealing and being sexually responsible. 5. The perfection
-of work: earning a living or sustaining one's life in a way that does not harm
-or exploit others or oneself. 6. The perfection of effort: cultivating and
-maintaining wholesome states of mind while overcoming unwholesome states and
-keeping them at bay. 7. The perfection of conscious awareness: being fully
-mindful of one's body, feelings, mind and phenomena. 8. The perfection of
-meditative concentration: deep unification, peace and purity of mind.
+   truths of reality.
+
+2. The perfection of intention: motivations of loving-kindness, compassion and
+   renunciation.
+
+3. The perfection of speech: words that are honest, harmonious, gentle and
+   meaningful.
+
+4. The perfection of behavior: non-violence, not stealing and being sexually
+   responsible.
+
+5. The perfection of work: earning a living or sustaining one's life in a way
+   that does not harm or exploit others or oneself.
+
+6. The perfection of effort: cultivating and maintaining wholesome states of
+   mind while overcoming unwholesome states and keeping them at bay.
+
+7. The perfection of conscious awareness: being fully mindful of one's body,
+   feelings, mind and phenomena.
+
+8. The perfection of meditative concentration: deep unification, peace and
+   purity of mind.
 
 When all eight factors of this path are brought to maturity, one is able to
 penetrate the true nature of existence with insight and experience the
 perfected wisdom of the Buddha's teachings.
 
-## The Law of Kamma
+# The Law of Kamma
 
 According to the natural law of *kamma* (or *karma*), one's intentions are
 causes that lead to experiencing results in the future. The results will be
@@ -175,8 +191,8 @@ pain, unhappiness and misfortune in the future. This 'bad kamma' is
 unbeneficial both for oneself and others. Similarly, if one's actions, speech
 and thoughts originate from motivations such as generosity, unconditional love
 or clear understanding, this creates the causes to experience pleasure,
-happiness and good fortune in the future. This 'good kamma' leads to the well-
-being of both oneself and others.
+happiness and good fortune in the future. This 'good kamma' leads to the
+well-being of both oneself and others.
 
 Most, although not all, of what one experiences is the result of one's
 previous kamma, and how one responds to the present experience will generate
@@ -213,7 +229,7 @@ a way to live within it that leads to peace and happiness. Insight into kamma
 naturally leads to living an ethical, compassionate and wise life. When an
 entire society embraces these principles, the result is peace and prosperity.
 
-## Rebirth
+# Rebirth
 
 The concept of past and future lives is intrinsic to the Buddha's teachings.
 At the same time, the Buddha did not encourage believing a doctrine merely out
@@ -238,18 +254,18 @@ wandering on from realm to realm, is inherently unable to fully satisfy and
 often produces pain. By following the Noble Eightfold Path to its culmination,
 the process of rebirth ceases completely.
 
-## Do Buddhists Believe in God?
+# Do Buddhists Believe in God?
 
 Buddhism is a non-theistic religion that does not worship a God, creator or
 savior. Progress on the path to enlightenment is not dependent on an external
 force but on one's own effort. Buddhist cosmology does acknowledge the
 existence of heavenly realms, and the divine beings living there are similar
-to what people might associate with gods or God. However, because of the all-
-encompassing law of impermanence, even these exalted beings are subject to
+to what people might associate with gods or God. However, because of the
+all-encompassing law of impermanence, even these exalted beings are subject to
 passing away and being reborn. They are still caught in the cycle of birth and
 death, and therefore are not taken as an ultimate refuge.
 
-## The Delusion of a Permanent Self or Soul
+# The Delusion of a Permanent Self or Soul
 
 The Buddha taught that there is no essential or permanent core to a living
 being that could be considered one's true self or soul. What appears to be an
@@ -270,7 +286,7 @@ inevitable result is a lack of outer harmony and inner peace. Only through
 insight based on profound meditation can this mirage be clearly seen for what
 it truly is. Only then can one know perfect happiness.
 
-## The Buddhist Monastic Order
+# The Buddhist Monastic Order
 
 The Buddhist monastic community, the *Sangha*, was created by the Buddha for
 those people who wished to fully dedicate their lives toward the realization
@@ -292,7 +308,7 @@ the Sangha continues to practice in accordance with the Buddhist monastic code
 of discipline and strives for the attainment of enlightenment, the teachings
 of awakening will continue to flourish.
 
-## Types of Buddhism
+# Types of Buddhism
 
 By the time the Buddha passed away, his teachings were well established in
 India. With hundreds of thousands of disciples, including the kings and
@@ -317,7 +333,7 @@ religion to create Tibetan Buddhism. This then spread further to Mongolia and
 Bhutan. The most well-known Tibetan monk and Nobel Peace Prize laureate is the
 Dalai Lama.
 
-### Buddhism in the World Today
+## Buddhism in the World Today
 
 Buddhism continues to gain an ever-widening audience in countries and
 societies far beyond its original home. Many people throughout the world,
