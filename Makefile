@@ -2,16 +2,22 @@ FILE=book
 
 LATEX=lualatex
 BIBTEX=bibtex
+PANDOC=pandoc
 
 LATEX_OPTS=-interaction=nonstopmode -halt-on-error
+PANDOC_OPTS=
+#--chapters
 
-all: book
+all: book.pdf view
 
-main.tex: main.md
-	pandoc -o main.tex main.md
+main.tex: main.md Makefile
+	$(PANDOC) $(PANDOC_OPTS) -o main.tex main.md
 
-front.tex: front.md
-	pandoc -o front.tex front.md
+book.pdf: main.tex front.tex copyright.tex book.tex whatisbuddhism.cls
+	$(LATEX) $(LATEX_OPTS) $(FILE).tex
 
-book: main.tex front.tex
-	$(LATEX) $(LATEX_OPTS) $(FILE).tex;
+view:
+	/cygdrive/c/Program\ Files/Tracker\ Software/PDF\ Editor/PDFXEdit book.pdf &
+
+clean:
+	rm -f *.aux *.log main.tex book.pdf

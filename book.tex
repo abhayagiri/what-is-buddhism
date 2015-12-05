@@ -1,24 +1,21 @@
-\documentclass[
-  11pt,
-  pagePreset=widepocket,
-  textType=prose,
-  babelLanguage=USenglish,
-]{hark}
-
-\title{What is Buddhism?}
-\subtitle{Subtitle TODO}
-\author{Ajahn Chandako}
-\date{TODO}
-\ISBN{TODO}
-\editionInfo{TODO \textit{Third edition}, 10,000 copies, \the\year, Printed in United States}
+%\documentclass{whatisbuddhism}
+\documentclass{whatisbuddhism}
 
 \begin{document}
 
 \frontmatter
 
+% Suppress page numbering
+\pagestyle{empty}
+
 \input{front.tex}
+\input{copyright.tex}
 
 \mainmatter
+
+% Re-enable page numbering
+\pagenumbering{arabic}
+\pagestyle{mainstyle}
 
 \input{main.tex}
 
