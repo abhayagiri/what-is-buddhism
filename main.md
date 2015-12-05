@@ -105,7 +105,7 @@ realization of full enlightenment.
 The central teaching of the Buddha, around which all his other teachings
 revolve, is the Four Noble Truths, formulated as a medical analysis:
 
-1. The diagnosis: Life inevitably involves some mental and physical pain.
+1. **The diagnosis**: Life inevitably involves some mental and physical pain.
    Everyone at some point experiences disappointment, discomfort, anger,
    sadness, anxiety or suffering. People don't always get what they want, and
    they are often separated from whom and what they love. If we live long
@@ -113,21 +113,21 @@ revolve, is the Four Noble Truths, formulated as a medical analysis:
    everyone encounters death. Even the subtle but pervasive stress that
    accompanies normal daily functioning is a burden.
 
-2. The cause: The root of mental pain is craving for sensual pleasure, for
+2. **The cause**: The root of mental pain is craving for sensual pleasure, for
    existence or for non-existence; or simply wishing that things were
    different than they are. Craving is fueled by reactions to pleasure and
    pain and driven by the illusion of 'me' and 'mine', which in turn arise
    from misunderstanding the true nature of reality.
 
-3. The recovery: It is possible for all mental suffering to completely cease.
-   This is the attainment of enlightenment or awakening. Enlightenment is the
-   purification of the heart from all traces of attraction, aversion or
+3. **The recovery**: It is possible for all mental suffering to completely
+   cease. This is the attainment of enlightenment or awakening. Enlightenment
+   is the purification of the heart from all traces of attraction, aversion or
    delusion. It is the complete letting go of the illusion of an independent
    self or soul. A fully awakened person is called an *Arahant*. The Buddha
    called this the highest happiness, the full realization of human potential.
 
-4. The treatment: Enlightenment is achieved through a gradual training, a way
-   of life called the Middle Way, or the Noble Eightfold Path.
+4. **The treatment**: Enlightenment is achieved through a gradual training, a
+   way of life called the Middle Way, or the Noble Eightfold Path.
 
 These Four Noble Truths are realistic in that they face up to life's
 imperfections, and optimistic in that they offer a practical solution: a way
