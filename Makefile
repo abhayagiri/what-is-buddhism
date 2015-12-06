@@ -23,3 +23,9 @@ view:
 
 clean:
 	rm -f *.aux *.log main.tex main-before-lettrinize.tex book.pdf
+
+cover-front.pdf:
+	convert img/what-is-buddhism-front.png \
+		-resize '475x475^' -gravity center -extent '475x475' \
+		-units PixelsPerInch -density 100x100 \
+		cover-front.pdf
