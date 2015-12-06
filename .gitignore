@@ -2,5 +2,6 @@
 *.log
 book.pdf
 main.tex
+main-before-lettrinize.tex
 Pricing*
 docs

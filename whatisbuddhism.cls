@@ -27,6 +27,10 @@
 \RequirePackage{fontspec}
 % Custom section titles
 \RequirePackage{titlesec}
+% Drop capitals
+\RequirePackage{lettrine}
+% Widow and orphan control
+\RequirePackage[all]{nowidow} 
 
 %
 % Colors
@@ -39,13 +43,15 @@
 % Layout
 %
 
-\setstocksize{120mm}{120mm}
-\settrimmedsize{120mm}{120mm}{*}
+% \setstocksize{120mm}{120mm}
+% \settrimmedsize{120mm}{120mm}{*}
+\setstocksize{4.75in}{4.75in}
+\settrimmedsize{4.75in}{4.75in}{*}
 \settrims{0pt}{0pt}
-\settypeblocksize{90mm}{90mm}{*}
+\settypeblocksize{95mm}{90mm}{*}
 \setlrmargins{*}{*}{1.2}
 \setulmargins{*}{*}{0.7}
-\setheadfoot{15pt}{0pt}
+\setheadfoot{16pt}{0pt}
 \setheaderspaces{5mm}{*}{*}
 \checkandfixthelayout
 
@@ -59,8 +65,12 @@
 \newfontfamily\sansfont{Source Sans Pro}
 
 \renewcommand{\normalsize}{%
-  \fontsize{11.5pt}{14pt}\selectfont%
+  \fontsize{11.5pt}{15pt}\selectfont%
 }
+
+% Lettrine
+\setlength{\DefaultFindent}{1pt}
+\renewcommand{\DefaultLoversize}{0.2}
 
 %
 % Front Page and Copyright
@@ -159,6 +169,8 @@
 
 % Section titles are gray, large font, centered
 \titleformat{\section}{\sectionstyle}{\thesection}{1em}{}
+% Reduce spacing
+\titlespacing*{\section}{0pt}{2.1ex}{1ex}
 
 \newcommand{\sectionstyle}{%
   \sansfont%
