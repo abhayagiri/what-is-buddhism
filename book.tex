@@ -1,22 +1,23 @@
-%\documentclass{whatisbuddhism}
 \documentclass{whatisbuddhism}
 
 \begin{document}
 
-\frontmatter
+  \frontmatter
+  \frontstyles
 
-% Suppress page numbering
-\pagestyle{empty}
+  \begin{frontenv}
+    \input{front.tex}
+  \end{frontenv}
 
-\input{front.tex}
-\input{copyright.tex}
+  \begin{copyrightenv}
+    \input{copyright.tex}
+  \end{copyrightenv}
 
-\mainmatter
+  \mainmatter
+  \mainstyles
 
-% Re-enable page numbering
-\pagenumbering{arabic}
-\pagestyle{mainstyle}
-
-\input{main.tex}
+  \begin{mainenv}
+    \input{main.tex}
+  \end{mainenv}
 
 \end{document}

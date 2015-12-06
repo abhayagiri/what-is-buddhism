@@ -49,11 +49,8 @@
 \setheaderspaces{5mm}{*}{*}
 \checkandfixthelayout
 
-% Don't push paragraphs to the bottom the page
-\raggedbottom
-
 %
-% Fonts
+% Text and Fonts
 %
 
 \setmainfont{Gentium}
@@ -61,14 +58,48 @@
 
 \newfontfamily\sansfont{Source Sans Pro}
 
-%
-% Text
-%
-
 \renewcommand{\normalsize}{%
   \fontsize{11.5pt}{14pt}\selectfont%
 }
-\normalsize% Select it now
+
+%
+% Front Page and Copyright
+%
+
+\newcommand{\frontstyles}{%
+  % Suppress page numbering
+  \pagestyle{empty}%
+}
+
+\newenvironment{frontenv}{%
+  \newpage%
+  \normalsize%
+  \begin{center}%
+}{%
+  \end{center}%
+}
+
+\newenvironment{copyrightenv}{%
+  \newpage%
+  \raggedright%
+  \small%
+}{}
+
+%
+% Main Body
+%
+
+\newcommand{\mainstyles}{%
+  % Enable page numbering
+  \pagenumbering{arabic}%
+  \pagestyle{mainpagestyle}%
+}
+
+\newenvironment{mainenv}{%
+  % Don't push paragraphs to the bottom the page
+  \raggedbottom%
+  \normalsize%
+}{}
 
 % Allow for more spacing due to turning off hyphenation
 \tolerance=8000
@@ -106,35 +137,35 @@
 }
 
 % Show section name and page number for both odd and even headers
-\makepagestyle{mainstyle}
-\makeoddhead{mainstyle}{}{}{%
+\makepagestyle{mainpagestyle}
+\makeoddhead{mainpagestyle}{}{}{%
   \headerstyle%
   \suppressifsectionattop{\leftmark\sepdot}%
   \thepage%
 }
-\makeevenhead{mainstyle}{%
+\makeevenhead{mainpagestyle}{%
   \headerstyle%
   \thepage%
   \suppressifsectionattop{\sepdot\rightmark}%
 }{}{}
 
 % Suppress footers
-\makeoddfoot{mainstyle}{}{}{}
-\makeevenfoot{mainstyle}{}{}{}
+\makeoddfoot{mainpagestyle}{}{}{}
+\makeevenfoot{mainpagestyle}{}{}{}
 
 %
 % Sections
 %
 
 % Section titles are gray, large font, centered
+\titleformat{\section}{\sectionstyle}{\thesection}{1em}{}
+
 \newcommand{\sectionstyle}{%
   \sansfont%
   \Large%
   \color{section}%
   \centering%
 }
-
-\titleformat{\section}{\sectionstyle}{\thesection}{1em}{}
 
 % Turn off section numbering
 \setsecnumdepth{part}
