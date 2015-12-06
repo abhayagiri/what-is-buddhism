@@ -30,7 +30,12 @@
 % Drop capitals
 \RequirePackage{lettrine}
 % Widow and orphan control
-\RequirePackage[all]{nowidow} 
+\RequirePackage[all]{nowidow}
+% Widow and orphan control
+\RequirePackage{hyperref}
+% Line Spacing
+\DisemulatePackage{setspace}
+\RequirePackage{setspace}
 
 %
 % Colors
@@ -92,8 +97,18 @@
 \newenvironment{copyrightenv}{%
   \newpage%
   \raggedright%
+  \flushbottom%
   \small%
+  \setlength{\parskip}{0.5em}%
+  \linespread{0.8}\selectfont%
 }{}
+
+\newenvironment{copyrightindent}{%
+  \vspace{-0.3em}
+  \setlength{\leftskip}{5em}%
+}{%
+  \par%
+}
 
 %
 % Main Body
