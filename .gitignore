@@ -1,9 +1,8 @@
 *.aux
 *.log
 *.out
-book.pdf
+*.pdf
 main.tex
 main-before-lettrinize.tex
 Pricing*
 docs
-cover*.pdf

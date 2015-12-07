@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{papersize={4.75in,4.75in}}
+\usepackage{pdfpages}
+\begin{document}
+  \includepdf[pages=-]{img/booklet-front.pdf}
+  \newpage\null\thispagestyle{empty}\newpage
+  \includepdf[pages=-]{normal-booklet.pdf}
+  \newpage\null\thispagestyle{empty}\newpage
+  \includepdf[pages=-]{img/booklet-back.pdf}
+\end{document}

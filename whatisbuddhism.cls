@@ -11,6 +11,32 @@
 
 \LoadClass[11pt,twoside,openany]{memoir}
 
+\DeclareOption{short-booklet}{%
+  \newcommand{\documentfontsize}{%
+    \fontsize{10pt}{13pt}\selectfont%
+  }%
+  \newcommand{\suppressifsectionattop}[1]{%
+    \ifboolexpr{
+      test {\ifnumcomp{\value{page}}{=}{1}} or
+      test {\ifnumcomp{\value{page}}{=}{15}} or
+      test {\ifnumcomp{\value{page}}{=}{18}}
+    }{}{#1}
+  }%
+}
+\DeclareOption{normal-booklet}{%
+  \newcommand{\documentfontsize}{%
+    \fontsize{11pt}{15.5pt}\selectfont%
+  }%
+  \newcommand{\suppressifsectionattop}[1]{%
+    \ifboolexpr{
+      test {\ifnumcomp{\value{page}}{=}{1}} or
+      test {\ifnumcomp{\value{page}}{=}{19}} or
+      test {\ifnumcomp{\value{page}}{=}{23}}
+    }{}{#1}
+  }%
+}
+\ProcessOptions\relax
+
 %
 % Package Requirements
 %
@@ -31,7 +57,7 @@
 \RequirePackage{lettrine}
 % Widow and orphan control
 \RequirePackage[all]{nowidow}
-% Widow and orphan control
+% Links
 \RequirePackage{hyperref}
 % Line Spacing
 \DisemulatePackage{setspace}
@@ -70,7 +96,7 @@
 \newfontfamily\sansfont{Source Sans Pro}
 
 \renewcommand{\normalsize}{%
-  \fontsize{11.5pt}{15pt}\selectfont%
+  \documentfontsize\selectfont%
 }
 
 % Lettrine
@@ -142,14 +168,6 @@
 }
 
 % Don't show section names in headers on pages with the section at the top
-\newcommand{\suppressifsectionattop}[1]{%
-  \ifboolexpr{%
-    test {\ifnumcomp{\value{page}}{=}{1}} or
-    test {\ifnumcomp{\value{page}}{=}{19}} or
-    test {\ifnumcomp{\value{page}}{=}{23}} or
-    test {\ifnumcomp{\value{page}}{=}{25}}
-  }{}{#1}%
-}
 
 % Show section on both odd and even headers
 \renewcommand*{\sectionmark}[1]{\markboth{#1}{#1}}
