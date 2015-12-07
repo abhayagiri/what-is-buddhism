@@ -13,14 +13,19 @@
 
 \DeclareOption{short-booklet}{%
   \newcommand{\documentfontsize}{%
-    \fontsize{10pt}{13pt}\selectfont%
+    \fontsize{10pt}{12pt}\selectfont%
   }%
   \newcommand{\suppressifsectionattop}[1]{%
     \ifboolexpr{
       test {\ifnumcomp{\value{page}}{=}{1}} or
-      test {\ifnumcomp{\value{page}}{=}{15}} or
-      test {\ifnumcomp{\value{page}}{=}{18}}
+      test {\ifnumcomp{\value{page}}{=}{5}} or
+      test {\ifnumcomp{\value{page}}{=}{6}} or
+      test {\ifnumcomp{\value{page}}{=}{14}} or
+      test {\ifnumcomp{\value{page}}{=}{15}}
     }{}{#1}
+  }%
+  \newcommand{\setdocumentdimensions}{%
+    \settypeblocksize{98mm}{90mm}{*}
   }%
 }
 \DeclareOption{normal-booklet}{%
@@ -33,6 +38,9 @@
       test {\ifnumcomp{\value{page}}{=}{19}} or
       test {\ifnumcomp{\value{page}}{=}{23}}
     }{}{#1}
+  }%
+  \newcommand{\setdocumentdimensions}{%
+    \settypeblocksize{95mm}{90mm}{*}
   }%
 }
 \ProcessOptions\relax
@@ -78,8 +86,8 @@
 % \settrimmedsize{120mm}{120mm}{*}
 \setstocksize{4.75in}{4.75in}
 \settrimmedsize{4.75in}{4.75in}{*}
+\setdocumentdimensions
 \settrims{0pt}{0pt}
-\settypeblocksize{95mm}{90mm}{*}
 \setlrmargins{*}{*}{1.2}
 \setulmargins{*}{*}{0.7}
 \setheadfoot{16pt}{0pt}
