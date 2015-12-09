@@ -60,13 +60,13 @@ far surpassing any heavenly existence. Having experienced it for himself, the
 Buddha then spent the next 45 years teaching a way of life, a practical path
 of training and development which, when accurately and diligently followed,
 would lead others to the same awakening. These teachings are known as the
-*Dhamma* (or *Dharma*), meaning "the nature of all things" or "the path to
-understand the truths of existence."
+*Dhamma* (or *Dharma*), meaning 'the nature of all things' or 'the path to
+understand the truths of existence.'
 
 # A Path of Inquiry
 
 There are no fixed beliefs that a person must adopt in order to be a
-"Buddhist." In fact, the Buddha warned against the dangers of blind faith and
+'Buddhist.' In fact, the Buddha warned against the dangers of blind faith and
 encouraged wise inquiry and tolerance. The traveler on the path of inquiry
 maintains an open mind and thoroughly investigates his or her own experience
 of life. When one sees for oneself that a particular view or belief is both
@@ -187,11 +187,11 @@ similar to the intentions, and depending on one's state of mind when acting,
 speaking or even thinking, they will be experienced as either pleasant,
 unpleasant or neutral. If one's intention is tainted by anger, selfish desire,
 a wish to harm or general confusion, this creates the causes to experience
-pain, unhappiness and misfortune in the future. This "bad kamma" is
+pain, unhappiness and misfortune in the future. This 'bad kamma' is
 unbeneficial both for oneself and others. Similarly, if one's actions, speech
 and thoughts originate from motivations such as generosity, unconditional love
 or clear understanding, this creates the causes to experience pleasure,
-happiness and good fortune in the future. This "good kamma" leads to the
+happiness and good fortune in the future. This 'good kamma' leads to the
 well-being of both oneself and others.
 
 Most, although not all, of what one experiences is the result of one's
@@ -263,7 +263,7 @@ existence of heavenly realms, and the divine beings living there are similar
 to what people might associate with gods or God. However, because of the
 all-encompassing law of impermanence, even these exalted beings are subject to
 passing away and being reborn. They are still caught in the cycle of birth and
-death and, therefore, are not taken as an ultimate refuge.
+death, and therefore are not taken as an ultimate refuge.
 
 # The Delusion of a Permanent Self or Soul
 
@@ -272,7 +272,7 @@ being that could be considered one's true self or soul. What appears to be an
 individual person is actually a changing process of mental and physical
 qualities combining temporarily in a particular way. Through possessive
 attachment, the mind identifies with part or all of this process, and this
-gives rise to the sense of self, "me" and "mine." In fact, all phenomena,
+gives rise to the sense of self, 'me' and 'mine.' In fact, all phenomena,
 whether animate or inanimate, arise dependent on causes and conditions. In a
 constant state of flux, all things are empty of independent, inherent
 existence and the entirety of reality is a continuous flow of interconnected,
@@ -302,8 +302,8 @@ lifestyle dedicated to generating goodness, wisdom and peace in society.
 
 Between Buddhist monastics and Buddhist lay people, there is a relationship of
 nourishing inter-dependence. The Sangha relies on the lay community for its
-material needs and, in return, the monks and nuns provide the lay community
-with spiritual guidance, moral support and an inspiring example. As long as
+material needs, and in return the monks and nuns provide the lay community
+with spiritual guidance, moral support, and an inspiring example. As long as
 the Sangha continues to practice in accordance with the Buddhist monastic code
 of discipline and strives for the attainment of enlightenment, the teachings
 of awakening will continue to flourish.
@@ -348,7 +348,7 @@ valued.
 
 Our 21st century world is too small and vulnerable for us to live in isolation
 or conflict, and in Buddhism's 2,600 year history there has never been a
-"holy war" to spread the teachings of the Buddha. The qualities of tolerance,
+'holy war' to spread the teachings of the Buddha. The qualities of tolerance,
 non-violence and forgiveness, essential for world harmony and individual
 happiness, have been hallmarks of Buddhism from the very start. Cultivating
 virtuous behavior, meditation, and wisdom, the Buddha's path gradually fosters
