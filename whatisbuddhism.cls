@@ -13,34 +13,120 @@
 
 \DeclareOption{short-booklet}{%
   \newcommand{\documentfontsize}{%
-    \fontsize{10pt}{12pt}\selectfont%
+    \fontsize{10.5pt}{13.7pt}\selectfont%
   }%
-  \newcommand{\suppressifsectionattop}[1]{%
-    \ifboolexpr{
-      test {\ifnumcomp{\value{page}}{=}{1}} or
-      test {\ifnumcomp{\value{page}}{=}{5}} or
-      test {\ifnumcomp{\value{page}}{=}{6}} or
-      test {\ifnumcomp{\value{page}}{=}{14}} or
-      test {\ifnumcomp{\value{page}}{=}{15}}
-    }{}{#1}
+  \newcommand{\makeheader}[1]{%
+    \ifnumequal{\value{page}}{1}{}{%
+    \ifnumequal{\value{page}}{5}{}{%
+    \ifnumequal{\value{page}}{6}{}{%
+    \ifnumequal{\value{page}}{7}{%
+      \makeorientedheader{#1}{Meditation}}{%
+    \ifnumequal{\value{page}}{10}{%
+      \makeorientedheader{#1}{The Four Noble Truths}}{%
+    \ifnumequal{\value{page}}{12}{}{%
+    \ifnumequal{\value{page}}{15}{}{%
+    \ifnumequal{\value{page}}{16}{%
+      \makeorientedheader{#1}{Rebirth}}{%
+    \ifnumequal{\value{page}}{17}{%
+      \makeorientedheader{#1}{Do Buddhists Believe in God?}}{%
+    \ifnumequal{\value{page}}{18}{%
+      \makeorientedheader{#1}{The Delusion of a Permanent Self or Soul}}{%
+    \ifnumequal{\value{page}}{19}{%
+      \makeorientedheader{#1}{The Buddhist Monastic Order}}{%
+    \ifnumequal{\value{page}}{21}{%
+      \makeorientedheader{#1}{Types of Buddhism}}{%
+    \makeorientedheader{#1}{%
+      \ifstrequal{#1}{odd}{\rightmark}{\leftmark}%
+    }}}}}}}}}}}}}%
   }%
   \newcommand{\setdocumentdimensions}{%
-    \settypeblocksize{98mm}{90mm}{*}
+    \settypeblocksize{95mm}{90mm}{*}
+  }%
+  \newcommand{\settitlespacing}{%
+    % Reduce spacing
+    \titlespacing*{\section}{0pt}{2.1ex}{1ex}%
+  }%
+  \newcommand{\preparehyphenation}{%
+    % Enable hyphenation (default) for short booklet
   }%
 }
 \DeclareOption{normal-booklet}{%
   \newcommand{\documentfontsize}{%
     \fontsize{11pt}{15.5pt}\selectfont%
   }%
-  \newcommand{\suppressifsectionattop}[1]{%
-    \ifboolexpr{
-      test {\ifnumcomp{\value{page}}{=}{1}} or
-      test {\ifnumcomp{\value{page}}{=}{19}} or
-      test {\ifnumcomp{\value{page}}{=}{23}}
-    }{}{#1}
+  \newcommand{\makeheader}[1]{%
+    \ifnumequal{\value{page}}{1}{}{%
+    \ifnumequal{\value{page}}{5}{%
+      \makeorientedheader{#1}{The Buddha}}{%
+    \ifnumequal{\value{page}}{6}{%
+      \makeorientedheader{#1}{A Path of Inquiry}}{%
+    \ifnumequal{\value{page}}{8}{%
+      \makeorientedheader{#1}{Meditation}}{%
+    \ifnumequal{\value{page}}{11}{%
+      \makeorientedheader{#1}{The Four Noble Truths}}{%
+    \ifnumequal{\value{page}}{13}{%
+      \makeorientedheader{#1}{The Middle Way}}{%
+    \ifnumequal{\value{page}}{17}{%
+      \makeorientedheader{#1}{The Law of Kamma}}{%
+    \ifnumequal{\value{page}}{19}{}{%
+    \ifnumequal{\value{page}}{21}{%
+      \makeorientedheader{#1}{The Delusion of a Permanent Self or Soul}}{%
+    \ifnumequal{\value{page}}{23}{}{%
+    \ifnumequal{\value{page}}{24}{%
+      \makeorientedheader{#1}{Types of Buddhism}}{%
+    \makeorientedheader{#1}{%
+      \ifstrequal{#1}{odd}{\rightmark}{\leftmark}%
+    }}}}}}}}}}}}%
   }%
   \newcommand{\setdocumentdimensions}{%
     \settypeblocksize{95mm}{90mm}{*}
+  }%
+  \newcommand{\settitlespacing}{%
+    % Reduce spacing
+    \titlespacing*{\section}{0pt}{2.1ex}{1ex}%
+  }%
+  \newcommand{\preparehyphenation}{%
+    % Disable hyphenation for normal booklet
+    \RequirePackage[english=nohyphenation]{hyphsubst}%
+  }%
+}
+\DeclareOption{spaced-booklet}{%
+  \newcommand{\documentfontsize}{%
+    \fontsize{10.5pt}{15.3pt}\selectfont%
+  }%
+  \newcommand{\makeheader}[1]{%
+    \ifnumequal{\value{page}}{1}{}{%
+    \ifnumequal{\value{page}}{5}{%
+      \makeorientedheader{#1}{The Buddha}}{%
+    \ifnumequal{\value{page}}{6}{%
+      \makeorientedheader{#1}{A Path of Inquiry}}{%
+    \ifnumequal{\value{page}}{8}{%
+      \makeorientedheader{#1}{Meditation}}{%
+    \ifnumequal{\value{page}}{11}{%
+      \makeorientedheader{#1}{The Four Noble Truths}}{%
+    \ifnumequal{\value{page}}{13}{%
+      \makeorientedheader{#1}{The Middle Way}}{%
+    \ifnumequal{\value{page}}{17}{%
+      \makeorientedheader{#1}{The Law of Kamma}}{%
+    \ifnumequal{\value{page}}{19}{}{%
+    \ifnumequal{\value{page}}{21}{%
+      \makeorientedheader{#1}{The Delusion of a Permanent Self or Soul}}{%
+    \ifnumequal{\value{page}}{23}{}{%
+    \ifnumequal{\value{page}}{24}{%
+      \makeorientedheader{#1}{Types of Buddhism}}{%
+    \makeorientedheader{#1}{%
+      \ifstrequal{#1}{odd}{\rightmark}{\leftmark}%
+    }}}}}}}}}}}}%
+  }%
+  \newcommand{\setdocumentdimensions}{%
+    \settypeblocksize{90mm}{90mm}{*}
+  }%
+  \newcommand{\settitlespacing}{%
+    % More spacing
+    \titlespacing*{\section}{0pt}{4em}{2em}%
+  }%
+  \newcommand{\preparehyphenation}{%
+    % Enable hyphenation (default) for spaced booklet
   }%
 }
 \ProcessOptions\relax
@@ -49,8 +135,7 @@
 % Package Requirements
 %
 
-% Disable hyphenation
-\RequirePackage[english=nohyphenation]{hyphsubst}
+\preparehyphenation
 % Rules for English
 \RequirePackage[english]{babel}
 % Conditional logic
@@ -124,6 +209,8 @@
   \newpage%
   \normalsize%
   \begin{center}%
+  \setlength{\parskip}{1em}%
+  \linespread{1.0}\selectfont
 }{%
   \end{center}%
 }
@@ -133,8 +220,8 @@
   \raggedright%
   \flushbottom%
   \small%
-  \setlength{\parskip}{0.5em}%
-  \linespread{0.8}\selectfont%
+  \setlength{\parskip}{0.4em}%
+  \linespread{0.5}\selectfont%
 }{}
 
 \newenvironment{copyrightindent}{%
@@ -187,18 +274,23 @@
   \color{header}%
 }
 
+\newcommand{\makeorientedheader}[2]{%
+  \headerstyle%
+  \ifstrequal{#1}{odd}{%
+    #2%
+    \sepdot%
+    \thepage%
+  }{% even
+    \thepage%
+    \sepdot%
+    #2%
+  }%
+}
+
 % Show section name and page number for both odd and even headers
 \makepagestyle{mainpagestyle}
-\makeoddhead{mainpagestyle}{}{}{%
-  \headerstyle%
-  \suppressifsectionattop{\leftmark\sepdot}%
-  \thepage%
-}
-\makeevenhead{mainpagestyle}{%
-  \headerstyle%
-  \thepage%
-  \suppressifsectionattop{\sepdot\rightmark}%
-}{}{}
+\makeoddhead{mainpagestyle}{}{}{\makeheader{odd}}
+\makeevenhead{mainpagestyle}{\makeheader{even}}{}{}
 
 % Suppress footers
 \makeoddfoot{mainpagestyle}{}{}{}
@@ -210,8 +302,7 @@
 
 % Section titles are gray, large font, centered
 \titleformat{\section}{\sectionstyle}{\thesection}{1em}{}
-% Reduce spacing
-\titlespacing*{\section}{0pt}{2.1ex}{1ex}
+\settitlespacing
 
 \newcommand{\sectionstyle}{%
   \sansfont%
