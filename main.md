@@ -61,12 +61,12 @@ Buddha then spent the next 45 years teaching a way of life, a practical path
 of training and development which, when accurately and diligently followed,
 would lead others to the same awakening. These teachings are known as the
 *Dhamma* (or *Dharma*), meaning 'the nature of all things' or 'the path to
-understand the truths of existence.'
+understand the truths of existence'.
 
 # A Path of Inquiry
 
 There are no fixed beliefs that a person must adopt in order to be a
-'Buddhist.' In fact, the Buddha warned against the dangers of blind faith and
+'Buddhist'. In fact, the Buddha warned against the dangers of blind faith and
 encouraged wise inquiry and tolerance. The traveler on the path of inquiry
 maintains an open mind and thoroughly investigates his or her own experience
 of life. When one sees for oneself that a particular view or belief is both
@@ -272,7 +272,7 @@ being that could be considered one's true self or soul. What appears to be an
 individual person is actually a changing process of mental and physical
 qualities combining temporarily in a particular way. Through possessive
 attachment, the mind identifies with part or all of this process, and this
-gives rise to the sense of self, 'me' and 'mine.' In fact, all phenomena,
+gives rise to the sense of self, 'me' and 'mine'. In fact, all phenomena,
 whether animate or inanimate, arise dependent on causes and conditions. In a
 constant state of flux, all things are empty of independent, inherent
 existence and the entirety of reality is a continuous flow of interconnected,
