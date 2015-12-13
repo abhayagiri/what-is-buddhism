@@ -99,9 +99,7 @@
 % Layout
 %
 
-% \setstocksize{120mm}{120mm}
-% \settrimmedsize{120mm}{120mm}{*}
-\setstocksize{4.75in}{4.75in}
+\setstocksize{5in}{5in}
 \settrimmedsize{4.75in}{4.75in}{*}
 \setdocumentdimensions
 \settrims{0pt}{0pt}
@@ -110,6 +108,13 @@
 \setheadfoot{0pt}{0pt}
 \setheaderspaces{5mm}{*}{*}
 \checkandfixthelayout
+
+\pdfpageattr{
+  /MediaBox [0 0 360 360]
+  /BleedBox [0 0 360 360]
+  /CropBox [9 9 351 351]
+  /TrimBox [9 9 351 351]
+}
 
 %
 % Text and Fonts

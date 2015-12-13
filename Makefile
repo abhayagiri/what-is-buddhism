@@ -32,6 +32,9 @@ short-booklet-with-cover.pdf: short-booklet-with-cover.tex img/booklet-front.pdf
 normal-booklet-with-cover.pdf: normal-booklet-with-cover.tex img/booklet-front.pdf img/booklet-back.pdf normal-booklet.pdf
 	$(LATEX) $(LATEX_OPTS) normal-booklet-with-cover.tex
 
+spaced-booklet-with-cover.pdf: spaced-booklet-with-cover.tex spaced-booklet.pdf
+	$(LATEX) $(LATEX_OPTS) spaced-booklet-with-cover.tex
+
 short-booklet-print-draft.pdf: short-booklet.pdf short-booklet-print-draft.tex
 	$(LATEX) $(LATEX_OPTS) short-booklet-print-draft.tex
 
@@ -40,12 +43,6 @@ normal-booklet-print-draft.pdf: normal-booklet.pdf normal-booklet-print-draft.te
 
 spaced-booklet-print-draft.pdf: spaced-booklet.pdf spaced-booklet-print-draft.tex
 	$(LATEX) $(LATEX_OPTS) spaced-booklet-print-draft.tex
-
-img/booklet-front.pdf: img/booklet-front.png
-	$(CONVERT) img/booklet-front.png $(CONVERT_OPTS) img/booklet-front.pdf
-
-img/booklet-back.pdf: img/booklet-back.png
-	$(CONVERT) img/booklet-back.png $(CONVERT_OPTS) img/booklet-back.pdf
 
 view:
 	/cygdrive/c/Program\ Files/Tracker\ Software/PDF\ Editor/PDFXEdit \
