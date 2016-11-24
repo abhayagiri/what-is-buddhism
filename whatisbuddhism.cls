@@ -5,56 +5,14 @@
 % LPPL LaTeX Pubic Project Licence
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{whatisbuddhism}[2015/12/05 v1.0 Booklet class for What is Buddhism?]
+\ProvidesClass{whatisbuddhism}[2016/11/23 v1.1 Booklet class for What is Buddhism?]
 
 \RequirePackage{calc}
 
 \LoadClass[11pt,twoside,openany]{memoir}
 
-\DeclareOption{short-booklet}{%
-  \newcommand{\documentfontsize}{%
-    \fontsize{10.5pt}{13.7pt}\selectfont%
-  }%
-  \newcommand{\setdocumentdimensions}{%
-    \settypeblocksize{95mm}{90mm}{*}
-  }%
-  \newcommand{\settitlespacing}{%
-    % Reduce spacing
-    \titlespacing*{\section}{0pt}{2.1ex}{1ex}%
-  }%
+\DeclareOption{booklet}{%
   \newcommand{\preparehyphenation}{%
-    % Enable hyphenation (default) for short booklet
-  }%
-}
-\DeclareOption{normal-booklet}{%
-  \newcommand{\documentfontsize}{%
-    \fontsize{11pt}{15.5pt}\selectfont%
-  }%
-  \newcommand{\setdocumentdimensions}{%
-    \settypeblocksize{95mm}{90mm}{*}
-  }%
-  \newcommand{\settitlespacing}{%
-    % Reduce spacing
-    \titlespacing*{\section}{0pt}{2.1ex}{1ex}%
-  }%
-  \newcommand{\preparehyphenation}{%
-    % Disable hyphenation for normal booklet
-    \RequirePackage[english=nohyphenation]{hyphsubst}%
-  }%
-}
-\DeclareOption{spaced-booklet}{%
-  \newcommand{\documentfontsize}{%
-    \fontsize{10.5pt}{15.3pt}\selectfont%
-  }%
-  \newcommand{\setdocumentdimensions}{%
-    \settypeblocksize{90mm}{90mm}{*}
-  }%
-  \newcommand{\settitlespacing}{%
-    % More spacing
-    \titlespacing*{\section}{0pt}{2em}{1em}%
-  }%
-  \newcommand{\preparehyphenation}{%
-    % Enable hyphenation (default) for spaced booklet
     % Sloppy hyphenation
     \sloppy
     % Don't hyphenate too much (or across pages)
@@ -87,6 +45,12 @@
 % Line Spacing
 \DisemulatePackage{setspace}
 \RequirePackage{setspace}
+% Item spacing
+\RequirePackage{enumitem}
+% Creative Commons Icons
+\RequirePackage{ccicons}
+
+%\usepackage{showframe}
 
 %
 % Colors
@@ -99,34 +63,38 @@
 % Layout
 %
 
-\setstocksize{5in}{5in}
-\settrimmedsize{4.75in}{4.75in}{*}
-\setdocumentdimensions
-\settrims{0pt}{0pt}
-\setlrmargins{*}{*}{1.2}
-\setulmargins{*}{*}{0.7}
+\setstocksize{126mm}{126mm}
+\settrimmedsize{120mm}{120mm}{*}
+\settypeblocksize{90mm}{90mm}{*}
+\settrims{3mm}{3mm}
+\setlrmargins{*}{*}{1}
+\setulmargins{*}{*}{1}
 \setheadfoot{0pt}{0pt}
-\setheaderspaces{5mm}{*}{*}
+%\setheaderspaces{0pt}{*}{*}
 \checkandfixthelayout
 
-\pdfpageattr{
-  /MediaBox [0 0 360 360]
-  /BleedBox [0 0 360 360]
-  /CropBox [9 9 351 351]
-  /TrimBox [9 9 351 351]
-}
+\input{pdfpageattr.tex}
 
 %
 % Text and Fonts
 %
 
-\setmainfont{Gentium}
+\setmainfont[BoldFont={Gentium Basic Bold},ItalicFont={Gentium Italic}]{Gentium}
 \defaultfontfeatures{Ligatures={TeX}}
 
 \newfontfamily\sansfont{Source Sans Pro}
 
+\newcommand{\documentfontsize}{%
+  \fontsize{10.5pt}{15.3pt}\selectfont%
+}
+
 \renewcommand{\normalsize}{%
   \documentfontsize\selectfont%
+}
+
+% More spacing
+\newcommand{\settitlespacing}{%
+  \titlespacing*{\section}{0pt}{2em}{1em}%
 }
 
 % Lettrine
@@ -134,7 +102,7 @@
 \renewcommand{\DefaultLoversize}{0.2}
 
 %
-% Front Page and Copyright
+% Front Styles
 %
 
 \newcommand{\frontstyles}{%
@@ -143,33 +111,46 @@
 }
 
 \newenvironment{frontenv}{%
-  \newpage%
-  \normalsize%
   \begin{center}%
-  \setlength{\parskip}{1em}%
-  \linespread{1.0}\selectfont
+  \begin{vplace}[0.8]
 }{%
+  \end{vplace}
   \end{center}%
 }
 
 \newenvironment{copyrightenv}{%
-  \newpage%
+  \begingroup
   \raggedright%
   \flushbottom%
   \small%
-  \setlength{\parskip}{0.4em}%
-  \linespread{0.5}\selectfont%
-}{}
+  \setlength{\parskip}{0.8em}%
+%  \linespread{1.0}\selectfont%
+}{%
+  \endgroup%
+}
+
+\newenvironment{dedicationenv}{%
+  \begin{center}%
+  \begin{large}%
+  \begin{vplace}[0.8]
+  \begingroup%
+  \setlength{\parskip}{1em}%
+}{%
+  \endgroup%
+  \end{vplace}
+  \end{large}%
+  \end{center}%
+}
 
 \newenvironment{copyrightindent}{%
-  \vspace{-0.3em}
-  \setlength{\leftskip}{5em}%
+  \vspace{-0.3em}%
+  \setlength{\leftskip}{2em}%
 }{%
   \par%
 }
 
 %
-% Main Body
+% Main Styles
 %
 
 \newcommand{\mainstyles}{%
@@ -180,14 +161,48 @@
 
 \newenvironment{mainenv}{%
   % Don't push paragraphs to the bottom the page
+  \begingroup%
   \raggedbottom%
   \normalsize%
-}{}
+}{%
+  \endgroup%
+}
 
 % Allow for more spacing due to turning off hyphenation
 \tolerance=8000
 \hbadness=8000
 
+%
+% Back Styles
+%
+
+\newcommand{\backstyles}{%
+  % Suppress page numbering
+  \pagestyle{empty}%
+}
+
+\newenvironment{licenseenv}{%
+  \begingroup%
+  \setlength{\parindent}{0pt}%
+  \flushbottom%
+  \footnotesize%
+  \setlist{nosep}
+  \setlength{\parskip}{1.0em}%
+%  \linespread{1.0}\selectfont%
+}{%
+  \endgroup%
+}
+
+\newenvironment{licenseitemize}{%
+  \begin{itemize}%
+    \setlength{\itemsep}{0.5em}%
+    \setlength{\parskip}{0pt}%
+    \setlength{\parsep}{0pt}%
+}{%
+  \end{itemize}%
+}
+
+%
 %
 % Headers / Footers
 %
@@ -213,6 +228,10 @@
   \color{section}%
   \centering%
 }
+
+% Page break after each section
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
 
 % Turn off section numbering
 \setsecnumdepth{part}

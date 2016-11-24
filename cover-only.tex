@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{papersize={252mm,126mm}}
+\usepackage{pdfpages}
+% http://tex.stackexchange.com/questions/313489/error-using-pdfpages-and-lualatex/313501
+\usepackage{luatex85}
+\begin{document}
+  % 3mm = 8.50394pt
+  % 6mm = 17.0079pt
+  % 123mm = 348.661pt
+  % 126mm = 357.165pt
+  % 246mm = 697.323pt
+  % 252mm = 714.331pt
+  \pdfpageattr{
+    /MediaBox [0 0 714.331 357.165]
+    /BleedBox [0 0 714.331 357.165]
+    /CropBox [17.0079 8.50394 697.323 348.661]
+    /TrimBox [17.0079 8.50394 697.323 348.661]
+  }
+  \includepdfmerge[
+    nup=2x1,
+    noautoscale=true,
+    frame=false,
+    templatesize={126mm}{126mm}
+  ]{img/square-back.pdf,img/square-front.pdf}
+\end{document}

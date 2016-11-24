@@ -1,18 +1,14 @@
 \documentclass{article}
 \usepackage{geometry}
-\geometry{papersize={5in,5in}}
+\geometry{papersize={126mm,126mm}}
 \usepackage{pdfpages}
+% http://tex.stackexchange.com/questions/313489/error-using-pdfpages-and-lualatex/313501
+\usepackage{luatex85}
 \begin{document}
-  \pdfpageattr{
-    /MediaBox [0 0 360 360]
-    /BleedBox [0 0 360 360]
-    /CropBox [9 9 351 351]
-    /TrimBox [9 9 351 351]
-  }
+  \input{pdfpageattr.tex}
   \includepdf{img/square-front.pdf}
   \newpage\null\thispagestyle{empty}\newpage
-  \includepdf[pages=-]{spaced-booklet.pdf}
+  \includepdf[pages=-]{booklet.pdf}
   \newpage\null\thispagestyle{empty}\newpage
   \includepdf{img/square-back.pdf}
 \end{document}
-

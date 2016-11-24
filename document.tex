@@ -4,18 +4,46 @@
   \frontstyles
 
   \begin{frontenv}
-    \input{front.tex}
+    {\HUGE What Is Buddhism? \par}
+    \vspace{3em}
+    {\LARGE By \par}
+    \vspace{0.5em}
+    {\LARGE Ajahn Chandako}
   \end{frontenv}
 
+  \newpage
   \begin{copyrightenv}
-    \input{copyright.tex}
+    \include{copyright}
   \end{copyrightenv}
 
+  \cleardoublepage
+  \begin{dedicationenv}
+    This fifth edition has been graciously sponsored by the Kataññuta group in
+    Malaysia, Singapore and Australia.
+
+    May all beings be free from all suffering.
+  \end{dedicationenv}
+
+  \cleardoublepage
   \mainmatter
   \mainstyles
 
   \begin{mainenv}
-    \input{main-before-lettrinize.tex}
+    \include{main-before-lettrinize}
   \end{mainenv}
+
+  \cleardoublepage
+  \backmatter
+  \backstyles
+
+  \null
+  \pagebreak
+  \begin{licenseenv}
+    \include{license}
+  \end{licenseenv}
+
+  %
+  \null
+  \pagebreak
 
 \end{document}
