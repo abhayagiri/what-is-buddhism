@@ -2,8 +2,10 @@
 *.log
 *.out
 *.pdf
+.DS_Store
 main.tex
 main-before-lettrinize.tex
 Pricing*
 docs
 build
+release

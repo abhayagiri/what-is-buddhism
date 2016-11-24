@@ -5,8 +5,6 @@ PYTHON=python
 TEXFILES=main.tex copyright.tex document.tex license.tex whatisbuddhism.cls
 
 LATEX_OPTS=-interaction=nonstopmode -halt-on-error
-CONVERT_OPTS=-resize '1425x1425^' -gravity center -extent '1425x1425' \
-	-units PixelsPerInch -density 300x300 -compress JPEG
 
 all: booklet.pdf booklet-with-cover.pdf cover-only.pdf
 
@@ -30,6 +28,12 @@ img/square-front.pdf:
 
 img/square-back.pdf:
 	make -C img square-back.pdf
+
+release: all
+	mkdir -p release
+	cp booklet-with-cover.pdf release/"What is Buddhism.pdf"
+	cp booklet.pdf release/"What is Buddhism (No Cover).pdf"
+	cp cover-only.pdf release/"What is Buddhism (Cover Only).pdf"
 
 view:
 	open booklet.pdf
