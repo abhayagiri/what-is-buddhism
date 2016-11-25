@@ -31,7 +31,7 @@ img/square-back.pdf:
 
 release: all
 	mkdir -p release
-	cp booklet-with-cover.pdf release/"What is Buddhism.pdf"
+	cp booklet-with-cover.pdf release/"What is Buddhism (All Pages).pdf"
 	cp booklet.pdf release/"What is Buddhism (No Cover).pdf"
 	cp cover-only.pdf release/"What is Buddhism (Cover Only).pdf"
 
@@ -43,3 +43,4 @@ view:
 clean:
 	make -C img clean
 	rm -f *.aux *.log *.out *.pdf main.tex main-before-lettrinize.tex
+	rm -f release/*.pdf

@@ -1,5 +1,6 @@
 CONVERT=convert
-# See http://tex.stackexchange.com/questions/48101/how-do-i-make-sure-images-are-cmyk
+# http://tex.stackexchange.com/questions/48101/how-do-i-make-sure-images-are-cmyk
+# http://leftontheweb.com/blog/2015/02/25/Imagemagick_error_OSX/
 CONVERT_OPTIONS=+profile '*' -profile AdobeRGB1998.icc \
 	-profile USWebCoatedSWOP.icc -strip -sampling-factor 1x1 \
 	-compress JPEG -quality 100 -units PixelsPerCentimeter -density 119.05x119.05
