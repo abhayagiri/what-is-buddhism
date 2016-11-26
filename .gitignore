@@ -2,6 +2,7 @@
 *.log
 *.out
 *.pdf
+*.jpeg
 .DS_Store
 main.tex
 main-before-lettrinize.tex

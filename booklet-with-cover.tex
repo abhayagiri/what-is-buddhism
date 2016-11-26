@@ -1,14 +1,22 @@
 \documentclass{article}
 \usepackage{geometry}
 \geometry{papersize={126mm,126mm}}
+\usepackage[absolute]{textpos}
 \usepackage{pdfpages}
 % http://tex.stackexchange.com/questions/313489/error-using-pdfpages-and-lualatex/313501
 \usepackage{luatex85}
 \begin{document}
   \input{pdfpageattr.tex}
-  \includepdf{img/square-front.pdf}
-  \newpage\null\thispagestyle{empty}\newpage
+  \thispagestyle{empty}\null
+  \begin{textblock*}{126mm}(-5.5mm,0mm)%
+    \includegraphics{img/square-front.jpeg}%
+  \end{textblock*}
+  \newpage
+  \thispagestyle{empty}\null\newpage
   \includepdf[pages=-]{booklet.pdf}
-  \newpage\null\thispagestyle{empty}\newpage
-  \includepdf{img/square-back.pdf}
+  \thispagestyle{empty}\null\newpage
+  \thispagestyle{empty}\null
+  \begin{textblock*}{126mm}(-5.5mm,0mm)%
+    \includegraphics{img/square-back.jpeg}%
+  \end{textblock*}
 \end{document}
